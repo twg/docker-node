@@ -7,4 +7,4 @@ set -e
 docker build -t davidpellerin/node-api .
 
 # run the tests
-docker run davidpellerin/node-api npm run test
+# docker run davidpellerin/node-api npm run test
