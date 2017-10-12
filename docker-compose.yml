@@ -11,6 +11,16 @@ services:
       - api-deps:/code/node_modules
     environment:
       - VIRTUAL_HOST=davidpellerin.dev
+    links:
+      - db
+  db:
+    image: postgres
+    expose:
+      - 5432
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: sqlsql
 
 volumes:
   api-deps:
