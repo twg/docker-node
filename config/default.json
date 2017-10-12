@@ -1,0 +1,9 @@
+{
+  "api": {
+    "port": 3001
+  },
+  "postgres": {
+    "uri": "postgres://localhost/docker_node"
+  }
+}
+
